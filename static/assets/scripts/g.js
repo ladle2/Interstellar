@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const appsList = [
     {
-      name: '! Request A Game [UPDATED]',
+      name: '! Request A Game',
       link: 'https://forms.gle/94fJ9yAXQCgaXTrz6',
       image: '/assets/media/icons/request.webp',
       categories: ['all'],
@@ -286,6 +286,41 @@ document.addEventListener('DOMContentLoaded', () => {
       link: 'https://f.silvergames.com/awayfl/index.html?swf=burrito-bison.swf',
       image: '/assets/media/icons/burritobison.webp',
       categories: ['all'],
+      error: false,
+    },
+    {
+      name: 'Fireboy And Watergirl 2 In The Light Temple',
+      link: 'https://www.coolmathgames.com/sites/default/files/public_games/40210/',
+      image: '/assets/media/icons/fireboyandwatergirllighttemple.jpg',
+      categories: ['all', '2P'],
+      error: false,
+    },
+    {
+      name: 'Fireboy And Watergirl 4 In The Crystal Temple',
+      link: 'https://www.coolmathgames.com/sites/default/files/public_games/40212/',
+      image: '/assets/media/icons/fireboyandwatergirlcrystaltemple.jpg',
+      categories: ['all', '2P'],
+      error: false,
+    },
+    {
+      name: 'Fireboy And Watergirl 5: Elements',
+      link: 'https://www.coolmathgames.com/sites/default/files/public_games/40218',
+      image: '/assets/media/icons/fireboyandwatergirlelements.jpg',
+      categories: ['all', '2P'],
+      error: false,
+    },
+    {
+      name: 'Fireboy And Watergirl 6: Fairy Tales',
+      link: 'https://html5.gamedistribution.com/rvvASMiM/be3cff113c4e4f069b7614851825ffe9/index.html',
+      image: '/assets/media/icons/fireboyandwatergirlfairytales.webp',
+      categories: ['all', '2P'],
+      error: false,
+    },
+    {
+      name: 'Fireboy And Watergirl In The Forest Temple',
+      link: 'https://www.coolmathgames.com/sites/default/files/public_games/40034/',
+      image: '/assets/media/icons/fireboyandwatergirlfairytales.webp',
+      categories: ['all', '2P'],
       error: false,
     },
     {
@@ -1459,33 +1494,101 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       name: 'Roblox (Now.GG)',
-      link: 'https://now.gg/play/roblox-corporation/5349/roblox',
+      link: 'https://now.gg/iframe/snippet?app_pkg=com.roblox.client&partner=interstellar',
       image: '/assets/media/icons/roblox.png',
-      categories: ['all', 'emu'],
+      categories: ['all', 'emu', 'android'],
+      now: true,
     },
     {
       name: 'Now.GG',
       link: 'https://now.gg',
       image: '/assets/media/icons/now-gg.png',
-      categories: ['all', 'emu'],
+      categories: ['all', 'emu', 'android'],
     },
     {
-      name: 'Roblox (Now.GG Alternative)',
-      link: 'https://nowgg.nl/play/roblox-corporation/5349/roblox',
-      image: '/assets/media/icons/roblox.png',
-      categories: ['all', 'emu'],
+      name: 'Roblox (NowGG.nl)',
+      link: 'https://nowgg.nl/iframe/snippet?app_pkg=com.roblox.client&partner=interstellar',
+      image: '/assets/media/icons/astroid.png',
+      categories: ['all', 'emu', 'android'],
+      now: true,
     },
     {
-      name: 'Now.GG (Alternative)',
+      name: 'Roblox (NowGG.me)',
+      link: 'https://nowgg.me/apps/roblox-corporation/5349/roblox.html',
+      image: '/assets/media/icons/shuttle.png',
+      categories: ['all', 'emu', 'android'],
+    },
+    {
+      name: 'Now.GG (NowGG.nl)',
       link: 'https://nowgg.nl',
-      image: '/assets/media/icons/now-gg.png',
-      categories: ['all', 'emu'],
+      image: '/assets/media/icons/astroid.png',
+      categories: ['all', 'emu', 'android'],
+    },
+    {
+      name: 'Now.GG (NowGG.me)',
+      link: 'https://nowgg.me',
+      image: '/assets/media/icons/shuttle.png',
+      categories: ['all', 'emu', 'android'],
     },
     {
       name: 'Parappa the Rapper',
       link: 'https://retrogamesonline.io/parappa-the-rapper.embed',
       image: 'https://retrogamesonline.io/cache/data/image/game/parappa-the-rapper-1-f220x180.jpg',
       categories: ['all', 'emu'],
+    },
+    {
+      name: 'Half-Life',
+      link: 'https://x8bitrain.github.io/webXash/',
+      image: '/assets/media/icons/half-life.png',
+      categories: ['all'],
+    },
+    {
+      name: 'Kiomet',
+      link: 'https://kiomet.com',
+      image: '/assets/media/icons/kiomet.webp',
+      categories: ['all'],
+    },
+    {
+      name: 'Tribals.io',
+      link: 'https://tribals.io/',
+      image: '/assets/media/icons/tribalsio.jpg',
+      categories: ['all'],
+    },
+    {
+      name: 'Counter Strike 1.6',
+      link: 'https://play-cs.com/en/servers',
+      image: '/assets/media/icons/cs16.png',
+      categories: ['all'],
+    },
+    {
+      name: 'Narrow One',
+      link: 'https://narrow.one',
+      image: '/assets/media/icons/narrowone.png',
+      categories: ['all'],
+    },
+    {
+      name: 'Kirka',
+      link: 'https://kirka.io',
+      image: '/assets/media/icons/kirka.jpg',
+      categories: ['all'],
+    },
+    {
+      name: 'Cryzen',
+      link: 'https://cryzen.io',
+      image: '/assets/media/icons/cryzen.png',
+      categories: ['all'],
+    },
+    {
+      name: 'Hordes',
+      link: 'https://hordes.io',
+      image: '/assets/media/icons/hordes.jpg',
+      categories: ['all'],
+    },
+    {
+      name: 'Venge',
+      link: 'https://venge.io',
+      image: '/assets/media/icons/venge.png',
+      categories: ['all'],
     },
   ]
 
@@ -1534,8 +1637,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (typeof app.say !== 'undefined') {
           alert(app.say)
         }
-        saveToLocal(app.link)
-        window.location.href = '/w'
+        window.location.href = app.link
         return false
       }
     } else if (app.blank) {
@@ -1544,6 +1646,14 @@ document.addEventListener('DOMContentLoaded', () => {
           alert(app.say)
         }
         blank(app.link)
+        return false
+      }
+    } else if (app.now) {
+      link.onclick = function () {
+        if (typeof app.say !== 'undefined') {
+          alert(app.say)
+        }
+        now(app.link)
         return false
       }
     } else {
